@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.frontendhero.dev/wp-content/themes/akm-v1/favicon.png"
+        type="image/x-icon">
+
+
+    <title>Pomodoro Timer|CodingAKM</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="pomo.css">
+</head>
+
+<body>
+
+    <div id="vista-bg"></div>
+
+    <div id="akm-pomodoro">
+
+        <div id="akm-pomodoro-overlay">
+            <img src="loading.gif" alt="">
+        </div>
+
+        <span class="btn-icon" id="akm-toggle-settings"><i class="fa fa-cog"></i></span>
+
+        <div id="akm-timer-progress">
+            <svg class="circle-timer" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" class="circle-background" />
+                <circle cx="50" cy="50" r="45" class="circle-progress" />
+                <text id="akm-timer-time" x="50" y="50" text-anchor="middle" dy=".3em" font-size="18">00:00</text>
+                <text id="akm-timer-pause" x="50" y="68" text-anchor="middle" dy=".3em" font-size="7">Paused</text>
+                <text id="akm-timer-rest" x="50" y="68" text-anchor="middle" dy=".3em" font-size="7">Rest</text>
+            </svg>
+        </div>
+
+        <div id="akm-timer-sessions">
+            <p id="akm-completed-label">Completed work sessions: </p>
+            <p id="akm-completed-sessions">0</p>
+        </div>
+
+        <div id="akm-timer-functions">
+            <div id="akm-timer-settings">
+                <span class="btn-icon" id="akm-close-settings"><i class="fa fa-times"></i></span>
+
+                <form id="akm-timer-form">
+                    <p class="akm-timer-line">
+                        <label for="work-duration">Pomodoro:</label>
+                        <input type="number" id="work-duration" value="25" min="1">
+                    </p>
+                    <p class="akm-timer-line">
+                        <label for="rest-duration">Rest:</label>
+                        <input type="number" id="rest-duration" value="5" min="1">
+                    </p>
+                </form>
+            </div>
+            <div id="akm-timer-buttons">
+                <button id="pause-btn"><i class="fa fa-pause"></i></button>
+                <button id="start-btn"><i class="fa fa-play"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
