@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    background-color: rgb(253, 213, 157);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page {
+    width: 80%;
+    height: 80%;
+    border-radius: 7px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#ptop {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(103, 87, 46);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.info {
+    width: 30%;
+    display: flex;
+    gap: 60px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(87, 70, 24);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#pbtm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(87, 70, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background-color: rgb(111, 90, 34);
+}
