@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    
+}
+
+/*Navbar*/
+nav {
+    padding-top: 3vh;
+    height: 8vh;
+    max-width: 76vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    height: 6vh;
+}
+
+.right {
+    display: flex;
+}
+
+.lang {
+    padding: 0.7vh 1.7vw;
+    margin-right: 1.7vw;
+    border: 0.3px solid rgba(255, 255, 255, 0.389);
+    border-radius: 5px;
+    background-color: rgba(25, 25, 25, 0.554);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sm {
+    background-color: rgb(238, 2, 2);
+    padding: 1.2vh 1.3vw;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Page1 */
+.main {
+    background-image: url(assets/img/bg.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: max(1200px, 100vw);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main .box {
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    gap: 3.4vh;
+    height: calc(100% - 8vh);
+    width: 80%;
+    margin: 25vh auto 18.1vh auto;
+}
+
+.content h2 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.content h5 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.content h6 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.login {
+    margin-top: -1.3vh;
+    display: flex;
+    gap: 0.6vw;
+}
+
+.login input {
+    height: 6.6vh;
+    width: 24vw;
+    padding: 0.6vh 1.3vw;
+    border: 0.3px solid rgba(255, 255, 255, 0.389);
+    border-radius: 5px;
+    background-color: rgba(25, 25, 25, 0.554);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.login button {
+    width: 13vw;
+    font-size: 24px;
+    background-color: rgb(238, 2, 2);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: rgb(186, 4, 4);
+}
+@media screen and (max-width:1120px) {
+    .login button{
+        width: 13vw;
+        font-size: 1.8vw;
+    }
+}
+
+.seperator {
+    height: 0.91vh;
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    z-index: 5;
+}
+
+.first {
+    padding: 8vh 0 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 76vw;
+    margin: auto;
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+@media  screen and (max-width:1200px) {
+    .first{
+        flex-wrap: wrap
+    }
+    
+}
+.first div{
+    padding: 15px 0;
+}
+.first div h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+.tv{
+    position: relative;
+}
+.tv img {
+    width: 36vw;
+    position: relative;
+    z-index: 2;
+
+}
+
+.tv video {
+    position: absolute;
+    top: 12vh;
+    right: 4.663vw;
+    width: 27vw;
+}
+
+.mobile img {
+    scale: 0.8;
+}
+
+.mobile div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+    border: 2px solid gray;
+    position: absolute;
+    top: 53vh;
+    left: 13vw;
+    width: 300px;
+    height: 90px;
+    z-index: 10;
+    font-size: 16px;
+    background-color: black;
+}
+
+.mobile div img {
+    height: 11vh;
+    border-radius: 2px;
+}
+.third {
+    padding: 8vh 0 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 84vw;
+    margin: auto;
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third div h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+.pc img{
+    width: 36vw;
+    position: relative;
+    z-index: 2;
+}
+.pc video{
+    position: absolute;
+    top: 15vh;
+    right: 7.3vw;
+    width: 22vw;
+}
+.faq{
+    margin-top: 11vh;
+    background-color: black;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6vh;  
+}
+.faq h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.dabba{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+.faqbox{
+    display: flex;
+    background-color: rgb(43, 42, 42);
+    padding: 2vw;
+    width: 70vw;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: rgb(59, 59, 59);
+}
+footer{
+    padding: 10vh 13vw;
+}
+.footer{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 14px;
+}
+.footer-items a{
+    color: rgb(158, 158, 158);
+}
