@@ -13,16 +13,20 @@ body {
     overflow-x: hidden;
 }
 #main{
+    width: 100vw;
     position: absolute;
     z-index: 10;
 }
+@media screen and (max-width:880px){
+    #page,#page1,#page2,#page3,#page4{
+        width: 100%;
+    }
+    
+}
 #page {
     width: 100vw;
-    height: 120vh;
-    max-height: 1000px;
-    /* background: linear-gradient(349deg in hsl shorter hue,rgb(219, 219, 219),rgb(248, 207, 132)); */
-    /* background: linear-gradient(349deg in hsl shorter hue,rgb(49, 49, 49), rgb(0, 0, 0)); */
-    /* background: linear-gradient(349deg in hsl shorter hue,rgb(180, 67, 255), rgb(0, 0, 0)); */
+    height: 120rem;
+    max-height: 900px;
     background-image: url('img/bg-main.jpg');
     background-size: cover;
     overflow-x: hidden;
@@ -62,7 +66,7 @@ body {
 
 #hero {
     width: 420px;
-    margin: 13vmin 0 13vmin 23vmin;
+    margin:7rem 23vmin;
     color: white;
     display: flex;
 }
@@ -105,11 +109,16 @@ body {
 
 #travel {
     margin:0 auto;
-    width: 970px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:898px) {
+    #travel{
+        width: 600px;   
+    }
 }
 
 #travel-option .opt-btn {
@@ -129,11 +138,11 @@ body {
     text-decoration: none;
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     cursor: pointer;
 }
 #travel-info{
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     background-color: rgb(147, 204, 255);
     border-radius: 6px;
     box-shadow: rgba(18, 36, 196, 0.788) 0px 5px 30px -3px;
@@ -148,14 +157,14 @@ body {
 
 #page4{
     width: 100%;
-    height: 46vh;   
+    height: 22rem;   
 }
 .end{
     position: fixed;
     z-index: 9;
     bottom: 0;
-    width: 100vw;
-    padding: 14vh 13vw;
+    width: 100%;
+    padding: 8rem 14rem;
     background-image: url('https://plus.unsplash.com/premium_photo-1661963573455-ba0446e2cab9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center right;
     background-size: cover;
