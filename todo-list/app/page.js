@@ -1,12 +1,10 @@
-"use Client"
-import { useState } from "react";
-import Image from "next/image";
+"use client"
 import Navbar from "@/Components/Navbar";
 import Input from "@/Components/Input";
 export default function Home() {
   return (
     <>
-    <Navbar user={"Avinash"}/>
+    <Navbar user={"AK|CS"}/>
     <Input/>
     </>
   );
