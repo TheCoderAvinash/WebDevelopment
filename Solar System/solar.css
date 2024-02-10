@@ -239,8 +239,8 @@ html {
 }
 
 body {
-  background: #fff;
-  color: #252525;
+  background: rgb(255, 255, 255);
+  color: #000000;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: .8rem;
   overflow-x: hidden;
@@ -1775,7 +1775,7 @@ a.text-error:visited {
 
 /*! Solar.css | MIT License */
 body {
-  background: #181818;
+  background: #0d0d0d;
   color: #bebebe;
   overflow: hidden;
 }
@@ -1804,7 +1804,7 @@ body {
 }
 
 .solar-orbit {
-  border: .05rem solid rgba(190, 190, 190, .05);
+  border: .05rem solid rgba(31, 31, 31, 0.554);
   border-radius: 50%;
   display: block;
   left: 50%;
