@@ -15,7 +15,7 @@
     width: 100vw;
 <<<<<<< Updated upstream
     max-height: 28rem;
-    /* background: linear-gradient(185deg in hsl shorter hue, rgb(49, 49, 49), rgb(0, 0, 0)); */
+    background: linear-gradient(185deg in hsl shorter hue, rgb(49, 49, 49), rgb(0, 0, 0));
     /* background: linear-gradient(11deg in hsl shorter hue, rgb(0, 0, 0), rgb(180, 67, 255)); */
 =======
     height: 60vh;
